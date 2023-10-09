@@ -5,8 +5,8 @@ import { ListComponent } from './components/list/list.component';
 const routes: Routes = [
   {path: 'home', component: ListComponent},
   {path: '', redirectTo:'/home', pathMatch:'full'},
-  // {path: '**', redirectTo: '/home'},
-  {path: 'book/:id', loadComponent: () => import('./components/book-detail/book-detail.component')
+  //{path: '**', redirectTo: '/home'},
+  {path: 'detail/:id', loadComponent: () => import('./components/book-detail/book-detail.component')
   .then(cmp => cmp.BookDetailComponent)},
 ];
 

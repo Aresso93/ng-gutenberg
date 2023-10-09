@@ -17,16 +17,16 @@ export class DataService {
   getAllBooks():Observable<Book[]>{
     console.log('return');
     return this.http.get<any>(this.BASE_URL).pipe(
-      tap(data => console.log('data', data.results)), 
-      map(data => data.results), 
+      tap(data => console.log('data', data.results)),
+      map(data => data.results),
       tap(data => console.log('data',data)
       )
     )
   }
 
   getSingleBook(id:string){
-    console.log('singolo libro');
-    return this.http.get<Book>(this.BASE_URL + '/' +id);
+    console.log('singolo libro', id);
+    return this.http.get<Book>(this.BASE_URL + '/' + id);
   }
 
 

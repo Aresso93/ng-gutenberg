@@ -19,7 +19,7 @@ import { BookDetailComponent } from './components/book-detail/book-detail.compon
     HeaderComponent,
     CardComponent,
     ListComponent,
-    BookDetailComponent
+
   ],
   imports: [
     BrowserModule,
@@ -27,7 +27,8 @@ import { BookDetailComponent } from './components/book-detail/book-detail.compon
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    BookDetailComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
