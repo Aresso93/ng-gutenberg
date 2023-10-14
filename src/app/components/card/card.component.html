@@ -4,7 +4,7 @@
     <mat-card-title>Titolo: {{book.title}}</mat-card-title>
     <mat-card-subtitle>Argomenti: {{book.subjects}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image [src]="book.formats['image/jpeg']" alt="book cover">
+  <img mat-card-image class="card-img"  alt="book cover">
   <mat-card-content>
     <!-- Autore: {{book.authors[0].name}} ({{book.authors[0].birth_year}}-{{book.authors[0].death_year}}) -->
     Lingua: {{book.languages}}
@@ -14,3 +14,5 @@
     <button class="card-btn" mat-button routerLink="/detail/{{book.id}}">Vai al dettaglio</button>
   </mat-card-actions>
 </mat-card>
+
+<!-- [src]="book.formats['image/jpeg']" -->

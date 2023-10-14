@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { BookDetailComponent } from './components/book-detail/book-detail.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { BookDetailComponent } from './components/book-detail/book-detail.compon
     HeaderComponent,
     CardComponent,
     ListComponent,
+    BookDetailComponent
 
   ],
   imports: [
@@ -28,7 +31,8 @@ import { BookDetailComponent } from './components/book-detail/book-detail.compon
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
-    BookDetailComponent
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

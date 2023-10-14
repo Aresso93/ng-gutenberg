@@ -1,11 +1,10 @@
-import { Component, OnInit, isStandalone } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Book } from 'src/app/model/book';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-book-detail',
-  standalone: true,
   templateUrl: './book-detail.component.html',
   styleUrls: ['./book-detail.component.scss']
 })
@@ -23,8 +22,6 @@ export class BookDetailComponent implements OnInit{
         this.book = singleBook
         console.log('prova, prova');
       });
-
-
     }
   }
 

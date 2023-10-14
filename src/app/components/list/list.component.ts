@@ -10,8 +10,6 @@ import { DataService } from 'src/app/services/data.service';
 export class ListComponent implements OnInit {
 
   bookArray: Book[] = []
-
-  
   constructor(private dataServ: DataService){}
 
   ngOnInit(): void {
